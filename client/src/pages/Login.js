@@ -1,8 +1,8 @@
+import './Login.css'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import './Login.css'
-import logo from './punchtime.png'
 import requests from '../services/requests'
+import logo from './punchtime.png'
 
 const Login = ({ cookies, cookieSetter }) => {
   const [usernameText, setUsername] = useState('')

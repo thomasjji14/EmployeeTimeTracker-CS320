@@ -1,12 +1,12 @@
+import './AggregateHistoryWindow.css'
 import { useState, useEffect } from 'react'
+import requests from '../services/requests'
 import BarGraph from '../components/BarGraph'
 import ListViewTable from '../components/ListViewTable'
-import loadingLogo from '../pages/loading.svg'
-import listpic from './listpic.png'
-import graphpic from './graphpic.png'
-import requests from '../services/requests'
 import DaySearch from './DaySearch'
-import './AggregateHistoryWindow.css'
+import graphpic from './graphpic.png'
+import listpic from './listpic.png'
+import loadingLogo from '../pages/loading.svg'
 
 const AggregateHistoryWindow = ({ isListPresent, setListPresence, employeeData, graphUpdates }) => {
   const [graphDisplayOption, setGraphDisplayOption] = useState('week')
@@ -34,8 +34,6 @@ const AggregateHistoryWindow = ({ isListPresent, setListPresence, employeeData, 
       employeeData.isManager,
       graphDisplayOption
     )
-    console.log('ROCKS')
-    console.log(result)
     setGraphData(result.data.value)
     updateGraphLoad(1)
   }
@@ -48,14 +46,11 @@ const AggregateHistoryWindow = ({ isListPresent, setListPresence, employeeData, 
       employeeData.isManager
     )
     updateListData(result.data.value)
-    // console.log(listData)
     updateListLoad(1)
   }
 
   const filterDays = (days, text) => {
     // return all employees if text is empty
-    console.log(days)
-    console.log(text)
     if (text === '') {
       return days
     }

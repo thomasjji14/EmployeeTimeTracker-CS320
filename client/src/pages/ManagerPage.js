@@ -1,13 +1,13 @@
+import './ManagerPage.css'
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import requests from '../services/requests'
+import AggregateHistoryWindow from '../components/AggregateHistoryWindow'
 import EmployeeTable from '../components/EmployeeTable'
 import EmployeeSearch from '../components/EmployeeSearch'
 import LogoutButton from '../components/LogoutButton'
-import requests from '../services/requests'
 import loadingLogo from './loading.svg'
-import './ManagerPage.css'
 import NavigationTab from '../components/NavigationTab'
-import { useNavigate } from 'react-router-dom'
-import AggregateHistoryWindow from '../components/AggregateHistoryWindow'
 
 const Managerpage = ({ employeeData, employeeDataUpdater, cookieReset, cookies }) => {
   const [isListPresent, setListPresence] = useState(false)

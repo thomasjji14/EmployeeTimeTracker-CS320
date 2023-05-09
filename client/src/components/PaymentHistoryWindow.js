@@ -1,15 +1,15 @@
+import './PaymentHistoryWindow.css'
+import 'react-calendar/dist/Calendar.css'
 import { useState, useEffect } from 'react'
+import requests from '../services/requests'
+import Calendar from 'react-calendar'
 import BarGraph from '../components/BarGraph'
+import DaySearch from './DaySearch'
+import calpic from './calpic.png'
+import graphpic from './graphpic.png'
 import ListViewTable from '../components/ListViewTable'
 import loadingLogo from '../pages/loading.svg'
 import listpic from './list-ul.webp'
-import graphpic from './graphpic.png'
-import calpic from './calpic.png'
-import requests from '../services/requests'
-import DaySearch from './DaySearch'
-import './PaymentHistoryWindow.css'
-import Calendar from 'react-calendar'
-import 'react-calendar/dist/Calendar.css'
 
 const PaymentHistoryWindow = ({ isListPresent, setListPresence, employeeData, graphUpdates }) => {
   const [date, setDate] = useState('')

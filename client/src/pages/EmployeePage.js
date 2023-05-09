@@ -1,11 +1,11 @@
+import './EmployeePage.css'
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import requests from '../services/requests'
 import TimeEntry from '../components/TimeEntry'
 import LogoutButton from '../components/LogoutButton'
 import NavigationTab from '../components/NavigationTab'
 import PaymentHistoryWindow from '../components/PaymentHistoryWindow'
-import requests from '../services/requests'
-import './EmployeePage.css'
-import { useNavigate } from 'react-router-dom'
 
 const EmployeePage = ({ employeeData, employeeDataUpdater, cookieReset, cookies }) => {
   const navigator = useNavigate()
