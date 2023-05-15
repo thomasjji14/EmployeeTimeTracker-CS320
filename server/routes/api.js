@@ -8,7 +8,7 @@ const User = require('../models/userModel');
 const router = express.Router();
 router.use(cors());
 router.use(express.json());
-
+router.use(express.static('build'))
 
 router.post('/login', async (req, res, next) => {
     await User.findOne({email: req.body.username, password: req.body.password}).exec()

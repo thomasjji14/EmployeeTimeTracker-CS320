@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5aed9e2a.css",
+    "main.js": "/static/js/main.c5631af1.js",
+    "static/media/calpic.png": "/static/media/calpic.4bf946f51a7489e93c3d.png",
+    "static/media/walking-duck.gif": "/static/media/walking-duck.0f00bf3bf172c1858798.gif",
+    "static/media/dancing-gopher.gif": "/static/media/dancing-gopher.56bc3ad245aed9d5fecd.gif",
+    "static/media/punchtime.png": "/static/media/punchtime.07a7f2a49bd12fd5b1ae.png",
+    "static/media/listpic.png": "/static/media/listpic.163d0d2945658183a218.png",
+    "static/media/graphpic.png": "/static/media/graphpic.ba4c2b9255dac57928e9.png",
+    "static/media/normalBG.png": "/static/media/normalBG.2658c1d277c4ab0ca4ba.png",
+    "static/media/loginBG.png": "/static/media/loginBG.1585b58a900d42330fb5.png",
+    "static/media/list-ul.webp": "/static/media/list-ul.a492a71332da1e10d69c.webp",
+    "static/media/loading.svg": "/static/media/loading.dca004edab510baacaedf4bb8566dcad.svg",
+    "index.html": "/index.html",
+    "main.5aed9e2a.css.map": "/static/css/main.5aed9e2a.css.map",
+    "main.c5631af1.js.map": "/static/js/main.c5631af1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5aed9e2a.css",
+    "static/js/main.c5631af1.js"
+  ]
+}
